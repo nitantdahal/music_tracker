@@ -1,0 +1,351 @@
+body{
+
+background:#f1f5f9;
+
+font-family:Arial,sans-serif;
+
+}
+
+
+
+.sidebar{
+
+width:260px;
+
+background:#0f172a;
+
+color:white;
+
+padding:25px;
+
+}
+
+
+
+
+.logo{
+
+font-size:22px;
+
+font-weight:bold;
+
+margin-bottom:35px;
+
+}
+
+
+
+
+.profile-mini{
+
+text-align:center;
+
+margin-bottom:30px;
+
+}
+
+
+
+.avatar{
+
+font-size:45px;
+
+}
+
+
+
+.sidebar nav a{
+
+display:block;
+
+padding:15px;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:8px;
+
+margin-bottom:10px;
+
+cursor:pointer;
+
+}
+
+
+
+.sidebar nav a:hover,
+.sidebar nav .active{
+
+background:#334155;
+
+}
+
+
+
+.logout-btn{
+
+margin-top:40px;
+
+width:100%;
+
+padding:12px;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+
+
+
+
+.topbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:white;
+
+padding:20px;
+
+border-radius:12px;
+
+margin-bottom:25px;
+
+}
+
+
+
+
+.welcome-card{
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+margin-bottom:25px;
+
+}
+
+
+
+.stats-container{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:20px;
+
+}
+
+
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:15px;
+
+text-align:center;
+
+}
+
+
+
+.card h3{
+
+font-size:18px;
+
+}
+
+
+
+.card p{
+
+font-size:35px;
+
+font-weight:bold;
+
+margin:10px;
+
+}
+
+
+
+.table-section{
+
+background:white;
+
+padding:25px;
+
+border-radius:15px;
+
+margin-top:30px;
+
+}
+
+
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+
+
+th,td{
+
+padding:15px;
+
+border-bottom:1px solid #ddd;
+
+}
+
+
+
+
+
+@media(max-width:900px){
+
+
+.sidebar{
+
+display:none;
+
+}
+
+
+
+.stats-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.stats-container{
+
+grid-template-columns:1fr;
+
+}
+
+
+}
+
+.form-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    max-width:700px;
+
+}
+
+
+
+.form-group{
+
+    margin-bottom:20px;
+
+}
+
+
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+}
+
+
+
+.form-group input,
+.form-group textarea{
+
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+}
+
+
+
+.form-group textarea{
+
+    height:120px;
+
+    resize:none;
+
+}
+
+
+
+.form-card button{
+
+    background:#0f172a;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+
+
+.form-card button:hover{
+
+    opacity:0.9;
+
+}
+
+
+
+#message{
+
+    margin-bottom:15px;
+
+    font-weight:bold;
+
+}

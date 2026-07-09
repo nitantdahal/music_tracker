@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard</title>
+
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+
+    <link rel="stylesheet" href="../assets/css/student.css">
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard-container">
+
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+
+<div class="logo">
+
+🎵 Music Tracker
+
+</div>
+
+
+
+<div class="profile-mini">
+
+    <div class="avatar">
+        👨‍🎓
+    </div>
+
+
+    <h3 id="sidebarName">
+        Student
+    </h3>
+
+
+    <p id="sidebarInstrument">
+        Instrument
+    </p>
+
+
+</div>
+
+
+
+
+<nav>
+
+
+<a class="active">
+    🏠 Dashboard
+</a>
+
+
+<a href="practice.html">
+
+🎸 Practice Sessions
+
+</a>
+
+
+<a>
+    🎯 Goals
+</a>
+
+
+<a>
+    🏆 Achievements
+</a>
+
+
+</nav>
+
+
+
+<button class="logout-btn" onclick="logout()">
+
+Logout
+
+</button>
+
+
+
+</aside>
+
+
+
+
+
+
+<!-- Main Area -->
+
+<main class="main-content">
+
+
+
+<header class="topbar">
+
+
+<h1>
+Student Dashboard
+</h1>
+
+
+<div>
+
+Welcome 👋
+
+</div>
+
+
+</header>
+
+
+
+
+
+<!-- Welcome Card -->
+
+
+<section class="welcome-card">
+
+
+<h2 id="studentName">
+
+Welcome Student 👋
+
+</h2>
+
+
+<p id="studentInstrument">
+
+Instrument:
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+<!-- Statistics -->
+
+
+<section class="stats-container">
+
+
+<div class="card">
+
+<h3>
+🎼 Sessions
+</h3>
+
+<p id="totalSessions">
+0
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+⏱ Hours
+</h3>
+
+<p id="totalHours">
+0
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+🔥 Streak
+</h3>
+
+<p id="currentStreak">
+0
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+🎯 Goals
+</h3>
+
+<p id="completedGoals">
+0
+</p>
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<!-- Recent Practice -->
+
+
+<section class="table-section">
+
+
+<h2>
+Recent Practice
+</h2>
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>
+Piece
+</th>
+
+<th>
+Duration
+</th>
+
+<th>
+Date
+</th>
+
+<th>
+Notes
+</th>
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="practiceTable">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+</section>
+
+
+
+</main>
+
+
+</div>
+
+
+
+<script src="../assets/js/checkAuth.js"></script>
+
+<script src="../assets/js/logout.js"></script>
+
+<script src="../assets/js/studentDashboard.js"></script>
+
+
+<script>
+
+checkAuth("student");
+
+</script>
+
+
+</body>
+
+</html>
