@@ -3,282 +3,156 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Add Practice Session</title>
+    <title>Add Practice Session</title>
 
-
-<link rel="stylesheet" href="../assets/css/style.css">
-
-<link rel="stylesheet" href="../assets/css/student.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/student.css">
+    <link rel="stylesheet" href="../assets/css/practice.css">
 
 </head>
 
-
 <body>
-
 
 <div class="dashboard-container">
 
+    <!-- Sidebar -->
+    <aside class="sidebar">
 
+        <div class="logo">
+            🎵 Music Tracker
+        </div>
 
-<!-- Sidebar -->
+        <nav>
 
-<aside class="sidebar">
+            <a href="dashboard.html">
+                🏠 Dashboard
+            </a>
 
+            <a href="practice.html" class="active">
+                🎸 Practice Sessions
+            </a>
 
-<div class="logo">
+            <a href="#">
+                🎯 Goals
+            </a>
 
-🎵 Music Tracker
+            <a href="#">
+                🏆 Achievements
+            </a>
+
+        </nav>
+
+        <button class="logout-btn" onclick="logout()">
+            Logout
+        </button>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <h1>Add Practice Session</h1>
+
+            <a href="practice-history.html">
+                View Practice History
+            </a>
+
+        </header>
+
+        <div class="practice-container">
+
+            <div class="practice-content">
+
+                <section class="form-card">
+
+                    <h2>Record Your Practice</h2>
+
+                    <p id="message"></p>
+
+                    <form id="practiceForm">
+
+                        <div class="form-group">
+
+                            <label for="piece_name">
+                                Piece Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="piece_name"
+                                placeholder="Example: Moonlight Sonata"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="duration_minutes">
+                                Duration (Minutes)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="duration_minutes"
+                                placeholder="Example: 60"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="session_date">
+                                Practice Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="session_date"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="notes">
+                                Notes
+                            </label>
+
+                            <textarea
+                                id="notes"
+                                placeholder="Write your practice notes..."></textarea>
+
+                        </div>
+
+                        <button type="submit" class="primary-btn">
+                            Save Practice
+                        </button>
+
+                    </form>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
 
 </div>
-
-
-
-<nav>
-
-
-<a href="dashboard.html">
-
-🏠 Dashboard
-
-</a>
-
-
-
-<a class="active">
-
-🎸 Practice Sessions
-
-</a>
-
-
-
-<a>
-
-🎯 Goals
-
-</a>
-
-
-
-<a>
-
-🏆 Achievements
-
-</a>
-
-
-</nav>
-
-
-
-<button class="logout-btn" onclick="logout()">
-
-Logout
-
-</button>
-
-
-
-</aside>
-
-
-
-
-
-<!-- Main Content -->
-
-
-<main class="main-content">
-
-
-
-<header class="topbar">
-
-
-<h1>
-
-Add Practice Session
-
-</h1>
-
-<a href="practice-history.html">
-View Practice History
-</a>
-
-
-</header>
-
-
-
-
-
-
-<section class="form-card">
-
-
-<h2>
-
-Record Your Practice
-
-</h2>
-
-
-
-<p id="message"></p>
-
-
-
-
-<form id="practiceForm">
-
-
-
-<div class="form-group">
-
-
-<label>
-
-Piece Name
-
-</label>
-
-
-<input 
-type="text"
-id="piece_name"
-placeholder="Example: Moonlight Sonata"
->
-
-
-</div>
-
-
-
-
-
-<div class="form-group">
-
-
-<label>
-
-Duration (Minutes)
-
-</label>
-
-
-<input
-
-type="number"
-
-id="duration_minutes"
-
-placeholder="Example: 60"
-
->
-
-
-</div>
-
-
-
-
-
-<div class="form-group">
-
-
-<label>
-
-Practice Date
-
-</label>
-
-
-<input
-
-type="date"
-
-id="session_date"
-
->
-
-
-</div>
-
-
-
-
-
-
-<div class="form-group">
-
-
-<label>
-
-Notes
-
-</label>
-
-
-<textarea
-
-id="notes"
-
-placeholder="Write your practice notes..."
-
-></textarea>
-
-
-</div>
-
-
-
-
-
-
-<button type="submit">
-
-Save Practice
-
-</button>
-
-
-
-</form>
-
-
-
-</section>
-
-
-
-</main>
-
-
-
-</div>
-
-
-
-
 
 <script src="../assets/js/checkAuth.js"></script>
-
 <script src="../assets/js/logout.js"></script>
-
 <script src="../assets/js/practice.js"></script>
 
 <script>
-
-checkAuth("student");
-
-
+    checkAuth("student");
 </script>
-
-
 
 </body>
 
